@@ -14,15 +14,8 @@ public class ToDoController {
     ToDoService todoservice;
  @GetMapping(value = "/Srk")
    public String getSrk(){
-      // return "HI SONALY........... Khushboo tumhare julfo ki ab tak basi h saanso me,.. Mehak jati h ruhh meri jab aati ho tum baho me,,,......... Tumhara SRK my SHONA ,,,,,,,,,.... I LOVE YOU MY Rasmalai..... I LOVE YOU MY Rasgulla......   I LOVE YOU MY Lamone......   I LOVE YOU MY Diamond......  I LOVE YOU MY cute girl...... I LOVE YOU MY Laddu...... I LOVE YOU MY Janeman...... I LOVE YOU MY Janejigar.";
-  return " ---- 💝💝     💝💝-----
----💝💋💋💋💋💋💝---- 
-  -💝I LOVE U BABY💝-- 
- --💝💋💋💋💋💋💝--
-- --- 💝💋💋💋💝----
- ------💝🍡💝-------
-----------💝-------------";
-
+      return "HI SONALY........... Khushboo tumhare julfo ki ab tak basi h saanso me,.. Mehak jati h ruhh meri jab aati ho tum baho me,,,......... Tumhara SRK my SHONA ,,,,,,,,,.... I LOVE YOU MY Rasmalai..... I LOVE YOU MY Rasgulla......   I LOVE YOU MY Lamone......   I LOVE YOU MY Diamond......  I LOVE YOU MY cute girl...... I LOVE YOU MY Laddu...... I LOVE YOU MY Janeman...... I LOVE YOU MY Janejigar.";
+ 
    }
     
    @GetMapping(value = "/ToDo")
