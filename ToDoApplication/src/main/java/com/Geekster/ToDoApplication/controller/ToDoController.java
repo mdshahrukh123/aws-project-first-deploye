@@ -12,10 +12,10 @@ import java.util.List;
 public class ToDoController {
     @Autowired
     ToDoService todoservice;
-//    @GetMapping(value = "/ToDo")
-//    public List<ToDo> getToDo(){
-//       return todoservice.getAllToDosInMyList();
-//    }
+   @GetMapping(value = "/ToDo")
+   public List<ToDo> getToDo(){
+      return todoservice.getAllToDosInMyList();
+   }
 
     @PostMapping(value = "/ToDo")
     public String saveToDo(@RequestBody ToDo todoSaveData){
@@ -26,10 +26,10 @@ public class ToDoController {
     public ToDo getToDoById(@PathVariable  Integer id){
         return todoservice.getToDoBasedOnId(id);
     }
-    @GetMapping(value = "/ToDo")
-    public List<ToDo> getFilterToDo(@Nullable @RequestParam Integer id, @Nullable @RequestParam Boolean todoStatus){
-     return todoservice.getToDo(id,todoStatus);
-    }
+    // @GetMapping(value = "/ToDo")
+    // public List<ToDo> getFilterToDo(@Nullable @RequestParam Integer id, @Nullable @RequestParam Boolean todoStatus){
+    //  return todoservice.getToDo(id,todoStatus);
+    // }
     @DeleteMapping(value = "/ToDo/{id}")
     public String removeToDoById(@Nullable @PathVariable Integer id){
         return todoservice.removeToDo(id);
