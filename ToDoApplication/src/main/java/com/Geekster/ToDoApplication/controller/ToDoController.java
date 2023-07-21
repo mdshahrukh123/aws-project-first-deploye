@@ -31,7 +31,7 @@ public class ToDoController {
     //  return todoservice.getToDo(id,todoStatus);
     // }
     @DeleteMapping(value = "/ToDo/{id}")
-    public String removeToDoById(@Nullable @PathVariable Integer id){
+    public String removeToDoById( @PathVariable Integer id){
         return todoservice.removeToDo(id);
     }
 
